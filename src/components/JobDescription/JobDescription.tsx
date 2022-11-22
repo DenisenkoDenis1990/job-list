@@ -56,7 +56,7 @@ export const JobDescription: FC<JobDescriptionProps> = ({ description }) => {
               <ul>
                 {benefitsItems.map(item => {
                   return (
-                    <li key={item} className="flex">
+                    <li key={item} className="flex items-center">
                       <Bullet />
                       <span className=" ml-[10px]"> {item}</span>
                     </li>

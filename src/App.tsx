@@ -21,8 +21,9 @@ export const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<JobBoard jobs={jobs} />}></Route>
+        <Route path="/" element={<JobBoard jobs={localJobs} />}></Route>
         <Route path="/:jobId" element={<JobDetails jobs={localJobs} />}></Route>
+        <Route path="*" element={<JobBoard jobs={localJobs} />} />
       </Routes>
     </div>
   );

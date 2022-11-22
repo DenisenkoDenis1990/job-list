@@ -14,8 +14,6 @@ type JobListItemProps = {
 export const JobListItem: FC<JobListItemProps> = ({ job }) => {
   const location = useLocation();
 
-  console.log(getTimeFromLastUpdate(job.updatedAt));
-
   return (
     <li className="job-list-item">
       <div className="basis-3/8  xl:basis-[8%] ">
